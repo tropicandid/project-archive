@@ -1,0 +1,32 @@
+#mc_embed_signup form {
+	padding: 0!important;
+    color: #707070;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+
+#mc_embed_signup .mc-field-group input {
+    border-radius: 0;
+    border: 2px solid #d9d9d9;
+    font-size: 18px;
+    color: #747474;
+}
+
+#mc_embed_signup .button {
+    background: #1e7479!important;
+    border-radius: 0!important;
+    text-transform: uppercase!important;
+    color: #fff!important;
+    font-size: 16px!important;
+    font-family: quatro,sans-serif!important;
+    text-decoration: none!important;
+    margin-bottom: 1rem!important;
+    width: 185px!important;
+    padding: .5rem!important;
+    height: auto!important;
+}
+
+#mc_embed_signup .button:hover {
+	background: #075b60!important;
+}

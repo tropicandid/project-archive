@@ -1,0 +1,44 @@
+.single-topic {
+	.entry-title {
+		color: $dark-teal;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 0;
+
+		@media #{$laptop-up} {
+			font-size: 4.5em;
+		}
+	}
+	.entry-header p {
+		text-align: center;
+		margin-bottom: 3rem;
+
+		@media #{$laptop-up} {
+			font-size: 2.4em;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.facetwp-template {
+		.card-text {
+			.card-description {
+				display: none;
+			}
+		}
+	}
+
+	.fwp-load-more {
+		margin-left: calc(50% - 88px);
+	}
+}
+
+.read-time-filtered {
+	.single-topic {
+		margin-bottom: 3rem;
+
+		@media #{$laptop-up} {
+			margin-bottom: 4rem;
+		}
+	}
+}

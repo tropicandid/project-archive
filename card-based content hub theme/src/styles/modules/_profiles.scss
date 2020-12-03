@@ -1,0 +1,57 @@
+.profile {
+	&-top {
+		display: flex;
+		flex-direction: column;
+	    border-bottom: 1px solid $light-gray;
+	    padding-bottom: 2.75rem;
+	    @media #{$tablet-landscape-up} {
+	    	flex-direction: row;
+	    }
+		&-image {
+			margin: 0 auto 1.5rem;
+			@media #{$tablet-landscape-up} {
+				margin: 0 2rem 0 0;
+			}
+		}
+		&-text {
+			display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    @media #{$up-to-tablet-landscape} {
+		    	p {
+		    		text-align: center;
+		    	}
+		    }
+			&-name, &-info {
+				font-family: $font-sans-serif;
+				color: $dark-teal;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+			&-name {
+				font-size: 2em;
+			    line-height: 1.25em;
+			    margin: 0;
+    			@media #{$tablet-up} {
+    			    font-size: 3.8em;
+    			}
+			}
+			&-info {
+				font-size: 1.5em;
+			    line-height: 1.4em;
+			    letter-spacing: .01em;
+			    margin-bottom: .5rem;
+    			@media #{$tablet-up} {
+					font-size: 2em;
+				}
+			}
+    	}
+	}
+	&-bottom {
+		position: relative;
+		margin: 2rem 0 3rem;
+		padding-bottom: .5rem;
+		border-bottom: 1px solid $light-gray;
+		position: relative;
+	}
+}

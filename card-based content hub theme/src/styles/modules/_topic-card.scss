@@ -1,0 +1,30 @@
+.topic-card {
+	background-size: cover;
+	
+	.text {
+		background-color: rgba(0,0,0,.35);
+		padding: 3rem 2rem 2rem;
+		color: $white;
+		height: 100%;
+
+		@media #{$tablet-up} {
+			padding: 5rem 2rem 2rem;
+		}
+
+		@media #{$laptop-up} {
+			padding: 9rem 2rem 2rem;
+		}
+
+		h2 {
+			font-size: 22px;
+
+			@media #{$laptop-up} {
+				font-size: 40px;
+			}
+		}
+
+		p {
+			color: $white;
+		}
+	}
+}

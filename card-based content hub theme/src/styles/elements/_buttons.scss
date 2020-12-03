@@ -1,0 +1,135 @@
+.button,
+.wp-block-button__link {
+    border: none;
+	text-transform: uppercase;
+    color: $white;
+    font-size: 1.6em;
+    font-family: $font-sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 185px;
+    padding: .9rem;
+	&.purple {
+		background: $purple;
+        &:hover {
+            background: $purple-hover;
+        }
+	}
+    &.white-on-teal {
+        color: $dark-teal;
+        background: $white;
+        &:hover {
+            background: $green;
+            color: $white;
+        }
+    }
+     &.white-on-purple {
+        color: $purple;
+        background: $white;
+        border: 1px solid $white;
+        &:hover {
+            background: $purple;
+            color: $white;
+        }
+    }
+    &.light-teal {
+        color: $white;
+        background: $light-teal;
+        &:hover {
+            background: darken($light-teal, 10%);
+        }
+    }
+    &.medium-teal {
+        background: $medium-teal;
+        &:hover {
+            background: darken($medium-teal, 10%);
+        }
+    }
+    &.dark-teal {
+        background: $dark-teal;
+        &:hover {
+            background: $dark-teal-hover;
+        }
+    }
+}
+
+.back-to-top {
+    color: $med-gray;
+    display: block;
+    font: {
+        size: 15px;
+        family: quatro,sans-serif;
+        weight: 200;
+    }
+    text: {
+        align: center;
+        decoration: none;
+        transform: uppercase;
+    }
+    position: absolute;
+    top: -4rem;
+    width: 100%;
+
+    &:before {
+        content: "";
+        background-image: url(assets/icons/up-arrow-gray.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 21px;
+        height: 35px;
+    }
+
+    @media #{$tablet-up} {
+        position: relative;
+        color: $white;
+        top: 2rem;
+        font-size: 17px;
+
+        &:before {
+            background-image: url(assets/icons/up-arrow-white.svg);
+            width: 25px;
+            height: 45px;
+        }
+    }
+}
+
+p {
+    button.button {
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        display: table;
+        padding: .9rem;
+
+        &.dark-teal {
+            color: $white !important;
+            background: $dark-teal;
+            &:hover {
+                background: $dark-teal-hover;
+            }
+        } 
+
+        a {
+            color: $white !important;
+        }  
+    }
+}
+
+.play-button {
+    cursor: pointer;
+    width: 40px;
+    margin-left: calc(50% - 20px);
+}
+
+.wp-block-button__link {
+    color: $white;
+    border-radius: 0px;
+    background: $dark-teal;
+    &:hover {
+        background: $dark-teal-hover;
+    }
+}

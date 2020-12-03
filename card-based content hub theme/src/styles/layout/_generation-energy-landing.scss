@@ -1,0 +1,54 @@
+.generation-energy-landing {
+	.entry-header {
+		text-align: center;
+
+		@media #{$tablet-up} {
+			padding-bottom: 3rem;
+		}
+		h1 {
+			color: $dark-brown;
+			font-size: 3.9em;
+			font-family: $font-serif;
+   	 		margin-bottom: 0;
+   	 		font-weight: 500;
+   	 		letter-spacing: -2px;
+   	 		text-align: center !important;
+
+			@media #{$tablet-up} {
+				text-align: left;
+				font-size: 62px;
+	    	}
+
+	    	@media #{$desktop-up} {
+				font-size: 84px;
+	    	}
+		}
+
+		p {
+			color: $dark-brown;
+			font-size: 16px;
+
+			@media #{$tablet-up} {
+				font-size: 17px;
+			}
+
+			@media #{$desktop-up} {
+				font-size: 22px;
+	    	}
+		}
+	}
+}
+
+.ge__featured-articles {
+			.card.ge-card.teal {
+				@media #{$tablet-up} {
+					max-width: none !important;
+				}
+
+				.ge-card__img {
+					@media #{$tablet-up} {
+						width: 250px;
+					}
+				}	
+			}
+		}

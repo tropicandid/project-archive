@@ -1,0 +1,112 @@
+.video-full{
+	&-wrap{
+		position: relative;
+		min-height: 325px;
+		height: 325px;
+		background-color: $white;
+
+		@media #{$phablet-up} {
+			height: 44.5vw;
+		}
+
+		&.inactive {
+			.video-full-overlay { cursor: default !important; }
+		}
+	}
+
+	&-image{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 2;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		height: 100%;
+  		overflow: hidden;
+	}
+
+	&-overlay{
+		background: rgba(0,0,0,.3);
+		padding: 25rem 0;
+		width: 100%;
+
+		h3{
+			color: #fff;
+			font-size: 5vw;
+			margin-bottom: 5vw;
+			text-shadow: 0 1px 8px #000;
+		}
+
+		h1, p {
+			text-shadow: 0px 0px 18px #000;
+		}
+
+		@media #{$tablet-landscape-up} {
+			h3{
+				font-size: 3vw;
+			}
+
+			&:hover{
+				cursor: pointer;
+
+				.video-full-play{
+					opacity: .75;
+				}
+			}
+		}	
+	}
+
+	&-play{
+		position:relative;
+		background: rgba(2555, 255, 255, .75);
+	    height: 65px;
+	    width: 65px;
+	    margin: auto;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+        border-radius: 65px;
+	        
+	    @media #{$phablet-up} {
+	        height: 125px;
+	        width: 125px;
+	        border-radius: 125px;
+	    }
+
+		&:before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-left: 25px solid #007dba;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+
+          @media #{$phablet-up} {
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 35px solid #007dba;
+          }
+
+          @media #{$tablet-up} {
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 50px solid #007dba;
+            left: 10px;
+          }
+        }	
+	}
+}

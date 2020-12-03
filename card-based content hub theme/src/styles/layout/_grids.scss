@@ -1,0 +1,49 @@
+.grid-1, .grid-2, .grid-3, .facetwp-template {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	// justify-content: space-between;
+	& > div {
+		width: 100%;
+		margin-bottom: 5%;
+		@media #{$tablet-up} {
+			width: 48.5%;
+			margin-bottom: 3%;
+		}
+	}
+}
+
+.grid-2, .grid-3, .facetwp-template {
+	& > div, & > article {
+		@media #{$tablet-up} {
+			margin-right: 3%;
+		}
+	}
+}
+
+.grid-2 {
+	& > div, & > article {
+		@media #{$tablet-up} {
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.facetwp-template,
+.grid-3 {
+	& > div, & > article {
+		@media #{$tablet-only} {
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+		}
+		@media #{$laptop-up} {
+			width: 31%;
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+}

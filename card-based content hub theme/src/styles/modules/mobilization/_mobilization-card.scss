@@ -1,0 +1,40 @@
+.mobilization-card {
+    &__image {
+        background-size: cover;
+		background-position: center;
+        background-image: url('assets/images/default-card.jpg');
+        margin-bottom: 2rem;
+		min-height: 300px;
+        display: block;
+        
+        @media #{$tablet-up} {
+            .grid-2 & {
+                min-height: 24vw;;
+            }
+
+            .grid-3 & {
+                min-height: 14vw;;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__description {
+        color: $darker-gray;
+    }
+    
+    .single-info,
+    .single-info span {
+        color: $darker-gray;
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+}

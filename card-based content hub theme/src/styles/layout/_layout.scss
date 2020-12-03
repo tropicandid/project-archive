@@ -1,0 +1,50 @@
+@import "backgrounds";
+@import "campaign";
+@import "container";
+@import "footer";
+@import "generation-energy-landing";
+@import "grids";
+@import "header";
+@import "homepage";
+@import "search";
+@import "single-page";
+@import "topic";
+
+.data-transparenty-layer {
+	padding: 1rem;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: $purple;
+	z-index: 1000;
+
+	&.hidden {
+		display: none;
+	}
+
+	p {
+		color: $white;
+		font-size: 14px;
+		font-family: $font-sans-serif;
+		display: inline-block;
+		width: 100%;
+		vertical-align: text-bottom;
+
+		@media #{$tablet-up} {
+			margin-bottom: 0;
+			width: calc(90% - 100px);
+		}
+
+		a { 
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+
+	.button {
+		display: inline-block;
+		vertical-align: text-bottom;
+		margin-bottom: 0;
+	}
+}

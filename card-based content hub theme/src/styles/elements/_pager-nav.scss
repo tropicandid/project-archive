@@ -1,0 +1,15 @@
+.pager-nav {
+	clear: both;
+	overflow: hidden;
+	font-family: $font-sans-serif;
+	.prev, .next {
+		width: 50%;
+	}
+	.prev {
+		float: left;
+	}
+	.next {
+		float: right;
+		text-align: right;
+	}
+}

@@ -1,0 +1,29 @@
+.container {
+	width: 90%;
+	max-width: 1600px;
+	margin: 0 auto;
+	@media #{$tablet-landscape-up} {
+		width: 92%;
+	}
+	@media #{$tablet-up} {
+		width: 85.5%;
+	}
+ 	&-banner {
+ 		width: 75%;
+ 		max-width: 550px;
+ 		@media #{$tablet-up} {
+ 			max-width: 810px;
+ 		}
+ 		@media #{$laptop-up} {
+ 			max-width: 1060px;
+ 		}
+ 	}
+ 	&.alt {
+ 		max-width: 1100px;
+ 	}
+ 	&.campaign-container {
+ 		@media #{$tablet-up} {
+ 			width: 79%;
+ 		}
+ 	}
+}

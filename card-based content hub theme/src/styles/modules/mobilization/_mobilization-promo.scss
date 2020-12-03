@@ -1,0 +1,115 @@
+.mobilization-promo {
+
+    @media #{$phablet-up} {
+        display: flex;
+    }
+
+
+    &__left, &__right {
+        padding: 3em;
+
+        @media #{$phablet-up} {
+            align-items: center;
+            display: flex;
+            padding: 7em 4em;
+        }
+    }
+
+    &__left {
+        border: 1px solid $light-gray;
+
+        @media #{$phablet-up} {
+            flex-basis: 70%;
+        }
+
+        @media #{$tablet-up} {
+            padding: 9em 6em;
+        }
+    }
+
+    &__right {
+        background-color: $dark-teal;
+       
+        @media #{$phablet-up} {
+            flex-basis: 30%;
+        }
+
+        @media #{$tablet-up} {
+            padding: 9em;
+        }
+
+        div {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 0;
+
+        @media #{$tablet-up} {
+            line-height: 36px;
+            max-width: 90%;
+        }
+    }
+
+    &__cta {
+        color: $white;
+        font-family: $font-sans-serif;
+    }
+
+    &__button {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    &--form {
+        .mobilization-promo__left {
+            @media #{$phablet-up} {
+                flex-basis: 55%;
+            }
+
+            > div {
+                @media #{$laptop-up} {
+                    max-width: 90%;
+                }
+            }
+        }
+    
+        .mobilization-promo__right {
+            @media #{$phablet-up} {
+                flex-basis: 45%;
+            }
+    
+            @media #{$tablet-up} {
+                padding: 7em;
+            }
+        }
+
+        .mobilization-promo__headline {
+            font-weight: 400;
+            line-height: normal;
+
+            @media #{$laptop-up} {
+                font-size: 3.6em;
+            }
+        }
+
+        .mobilization-promo__description {
+            color: $darker-gray;
+        }
+        
+        .mobilization-promo__form-title,
+        .mobilization-promo__form-description {
+            color: $white;
+            font-family: $font-sans-serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .mobilization-promo__form-description {
+            font-size: 1.4em;
+        }
+    }
+}

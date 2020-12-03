@@ -1,0 +1,35 @@
+blockquote.wp-block-quote {
+	margin: 3rem 0;
+	@media #{$tablet-up} {
+		margin: 4rem 0;
+	}
+	p {
+		font-size: 2em;
+		font-family: $font-sans-serif;
+		font-weight: 400;
+		line-height: 1.4em;
+		margin-bottom: .5rem;
+		color: $purple;
+		@media #{$tablet-up} {
+			font-size: 3.8em;
+		}
+	}
+	cite {
+		font-size: 1.1em;
+		font-family: $font-sans-serif;
+	    letter-spacing: .05em;
+	    color: #747474;
+	    text-decoration: none;
+	    display: block;
+	    margin: 0 0 0 3rem;
+	    position: relative;
+	    font-style: normal;
+	    &:before {
+	    	content: '— ';
+
+	    }
+	    @media #{$tablet-up} {
+	    	font-size: 1.2em;
+	    }
+	}
+}

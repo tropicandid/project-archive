@@ -1,0 +1,440 @@
+.timeline a:focus,
+.timeline button:focus,
+.timeline *:focus {
+	outline: none;
+}
+
+.timeline { 
+	background-color: #ffffff; 
+	padding: 3rem 0;
+	text-align: left;
+	font-family: quatro;
+	position: relative;
+	transition: .25s all ease-in-out;
+	overflow: hidden;
+}
+.timeline__scroll-bar {
+	position: absolute;
+    bottom: 2.75rem;
+	width: 91%;
+    left: 5%;
+	z-index: 1;
+	border-bottom: 1px solid #d9d9d9;
+}
+.ui-slider-horizontal{ height: 0 !important; }
+.slide-bar {
+	height: 3px;
+	width: 10%;
+	background-color: #2EA0A7 !important;
+	position: relative;
+	display: block;
+	margin-bottom: -2px;
+	transition: .25s all ease-in-out;
+	outline: none !important;
+	border: none !important; 
+	border-radius: 0px;
+}
+
+.timeline .slick-arrow {
+	display: none !important;
+	cursor: pointer;
+	position: absolute;
+	bottom: -3.5rem;
+	z-index: 2;
+	background-color: transparent;
+	/*background-size: 50px;*/
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	/*-webkit-transition: background-image .3s ease;
+	transition: background-image .3s ease;*/
+}
+
+.timeline .slick-arrow:hover {
+	/*background-size: 50px;*/
+}
+
+.timeline .slick-prev {
+	left: 32%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 33 33'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23861E4D;%7D.cls-2%7Bfill:%23861E4D;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etimeline_btn%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M33,33H0V0H33ZM1,32H32V1H1Z'/%3E%3Cpath class='cls-2' d='M19.62,10.37l.91,1.17-6.26,4.59,6.26,4.65-1,1.16-7.75-5.72v-.14Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.timeline .slick-prev:hover {
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 33 33' style='enable-background:new 0 0 33 33;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23861E4D;%7D .st1%7Bfill:%23FFFFFF;%7D%0A%3C/style%3E%3Ctitle%3Etimeline_btn_hover%3C/title%3E%3Cg id='Layer_2_1_'%3E%3Cg id='Layer_1-2'%3E%3Crect class='st0' width='33' height='33'/%3E%3Cpath class='st1' d='M11.8,16.9v-0.1l7.8-5.7l1,1.2l-6.3,4.6l6.3,4.6l-0.9,1.2L11.8,16.9z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.timeline .slick-next {
+	right: 32%;
+	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 33 33' style='enable-background:new 0 0 33 33;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23861E4D;%7D%0A%3C/style%3E%3Ctitle%3Etimeline_btn%3C/title%3E%3Cg id='Layer_2_1_'%3E%3Cg id='Layer_1-2'%3E%3Cpath class='st0' d='M0,0h33v33H0V0z M32,1H1v31h31V1z'/%3E%3Cpath class='st0' d='M13.4,22.6l-0.9-1.2l6.3-4.6l-6.3-4.6l1-1.2l7.8,5.7v0.1L13.4,22.6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.timeline .slick-next:hover {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 33 33'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23861E4D;%7D.cls-2%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Etimeline_btn_hover%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Crect class='cls-1' width='33' height='33'/%3E%3Cpath class='cls-2' d='M21.18,16.08v.14l-7.75,5.72-1-1.16,6.26-4.65-6.26-4.59.91-1.17Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.timeline .text-wrapper {
+    padding: 1.5rem;
+}
+.timeline h2 {
+	text-align: center;
+	color: #861E4D;
+	font-size: 5.5vw;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 90%;
+    margin: auto;
+}
+.timeline p {
+	text-align: center;
+	font-family: expo-serif-pro;
+	width: 85%;
+    margin: auto;
+}
+.timeline span { display: block; }
+.timeline .year { 
+	color: #fff; 
+	font-size: 2rem; 
+	font-family: quatro;
+	font-weight: 400;
+    margin: 2.75rem auto;
+}
+.timeline .year-wrapper {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(134, 30, 77, .75);
+    opacity: 1;
+    transition: .25s all ease-in-out;
+}
+.timeline .timeline-card:hover .year-wrapper {
+	opacity: 0;
+}
+.timeline .superscript { 
+	color: #343434;
+	font-family: quatro;
+	font-size: 10px;
+	text-transform: uppercase; 
+	margin-bottom: 1rem;
+    font-weight: 700;
+}
+.timeline .subtext { 
+	font-size: 16px; 
+	font-family: quatro;
+	color: #861E4D;
+}
+.timeline .image { 
+	width: 100%; 
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.timeline .timeline-card {
+	background-color: #F3F8F8;
+	margin: 2rem .25rem;
+	width: 300px !important;
+	border: 1px solid #D9D9D9;
+}
+
+.timeline .timeline-card:hover {
+	box-shadow: 0 0 8px 3px rgba(0, 0, 0, .1);
+}
+
+.timeline .sources {
+	text-align: left;
+	text-transform: uppercase;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0 0;
+}
+
+.timeline .acf-carousel {
+	width: 96%;
+    margin: auto;
+}
+
+.timeline .source {
+	display: block;
+	color: #343434;
+	font-family: quatro;
+	text-decoration: underline;
+	font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.timeline .slick-slide
+{
+	transition: .25s all ease-in-out;
+    height: inherit !important;
+    position: relative;
+}
+
+.timeline .timeline-data {
+	width: 90%;
+	margin: 1rem auto -1rem;
+	position: relative;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-left: 6rem;
+}
+
+.timeline .numbers-bar {
+	width: 100%;
+}
+
+.numbers-bar__color-wrap {
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.timeline .data-color-1,
+.timeline .data-color-2 {
+	width: 50%;    
+	padding: .25rem .75rem;
+	background-color: #861E4D;
+	display: inline-block;
+	transition: .5s all ease-in-out;
+	position: relative;
+}
+
+.timeline .data-label {
+	position: absolute;
+	left: -7rem;
+	text-align: right;
+	max-width: 100px;
+    font-size: 11px;
+	top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #7d7a7a;
+}
+
+.timeline .number {
+	font-size: 18px;
+	color: #ffffff;
+	z-index: 1;
+    position: relative;
+}
+
+.timeline .number-2 {
+	color: #ffffff;
+}
+
+.timeline .data-color-2 {
+	background-color: #EBC97F; /* GOLD */
+}
+
+.timeline .data-color-2:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	background-color: #861E4D;
+	width: 0px;
+	transition: .5s all ease-in-out;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.timeline .data-color-2.changOn:before {
+	width: 100%;
+}
+
+.timeline .timeline-ticks {
+	display: none;
+	border-bottom: 1px solid #a7a7a7;
+	width: 100%;
+	margin: 6rem 0 3rem;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	transition: .25s all ease-in-out;
+}
+
+.timeline .tick {
+	height: 8px;
+	width: 1px;
+	background-color: #a7a7a7;
+	position: relative;
+	transition: .25s all ease-in-out;
+}
+
+.timeline .tick .tick-year {
+	color: #5f5d5d;
+	display: none;
+	position: absolute;
+    top: -3rem;
+    left: -1rem;
+	transition: .25s all ease-in-out;
+	font-size: 1vw;
+	text-align: center;
+	cursor: pointer;
+}
+
+.timeline .tick.included .tick-year {
+	display: block;
+    line-height: 1.1;
+}
+
+.timeline .tick.active {
+	height: 25px;
+    margin-top: -17px;
+}
+
+.timeline .tick.active .tick-year {
+	font-size: 1.65vw;
+    font-weight: 500;
+    top: -3.5rem;
+    left: -1.5rem;
+}
+
+.slick-track
+{
+	margin-top: 1rem;
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
+
+.timeline .timeline-card {
+	opacity: .5;
+}
+.timeline .slick-center {
+	opacity: 1;
+}
+
+.tagline {
+	display: none;
+	color: #7d7a7a;
+    font-weight: 500;
+	position: absolute;
+    right: -7rem;
+    top: 24%;
+    width: 100px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* TABLET UP */
+@media only screen and (min-width: 900px) {
+	.tagline {
+		display: block;
+	}
+	.timeline .number {
+		font-size: 1.75vw;
+	}
+	.timeline .timeline-ticks {
+		display: flex;
+	}
+	.slick-track
+	{
+	    display: block !important;
+	}
+	.timeline .data-label {
+    	font-size: 12px;
+		top: 0;
+	}
+	.slick-slide
+	{
+	    height: auto !important;
+	}
+
+	.timeline .timeline-data {
+		margin: 2.5rem auto 2rem;
+		width: 50%;
+    	padding-left: 7rem;
+	}
+	.timeline .card-flex-wrapper {
+		display: flex !important;
+    	align-items: stretch !important;
+    	min-height: 18vw;
+	}
+	.timeline .sources {
+    	padding: 3rem 0 0;
+	}
+	.timeline .slick-arrow {
+		display: block !important;
+		width: 50px;
+    	height: 50px;
+	    bottom: -27%;
+	}
+	.timeline .slick-next {
+		right: 5%;
+    	left: auto;
+	}
+	.timeline .slick-prev {
+		/*background-position: -2px 9px;*/
+		left: 5%;
+	}
+	.timeline h2 {
+		text-align: center;
+	    font-size: 3vw;
+    	width: 47%;
+	}
+	.timeline p {
+		text-align: center;
+		width: 70%;
+		font-size: 1.2vw;
+		margin-bottom: 2rem;
+	}
+	.timeline .timeline-card {
+        width: 40vw !important;	
+		margin: 2rem 1vw;
+		opacity: .5;
+        transform: scale(.8);
+	}
+	.timeline .slick-center {
+		/*THIS IS THE ACTIVE ONE*/
+		opacity: 1;
+        transform: scale(1.2);
+        background-color: #ffffff;
+	}
+	.timeline .superscript {
+		font-size: .6vw;
+    	font-weight: 700;
+	}
+	.timeline .subtext {
+		font-size: 1.25vw;
+	}
+	.timeline .year { 
+		font-size: 2.25vw;
+    	margin: 7.5vw auto;
+    	padding: 0 .5rem;
+	}
+	.timeline .image { 
+		width: 37%;
+    	height: auto
+	}
+	.timeline .acf-carousel {
+		width: 100%;
+		padding-left: 0rem;
+	}
+	.timeline .text-wrapper {
+	    width: 65%;
+	    padding: 3vw 2vw;
+	}
+}
+
+/* LAPTOP UP */
+@media only screen and (min-width: 1200px) {
+
+	.timeline .slick-arrow {
+		background-size: 75px;
+		width: 75px;
+		height: 75px;
+	}
+
+	.timeline .slick-arrow {
+		display: block !important;
+		width: 75px;
+    	height: 75px;
+	    bottom: -27%;
+	}
+
+	.timeline .subtext {
+		font-size: 1.25vw;
+	}
+}

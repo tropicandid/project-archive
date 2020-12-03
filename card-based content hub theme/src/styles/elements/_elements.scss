@@ -1,0 +1,30 @@
+a,
+:link,
+:visited {
+	transition: all .3s ease;
+	text-decoration: none !important;
+}
+
+a:focus,
+button:focus,
+*:focus {
+	outline: none;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@import "addthis";
+@import "blockquotes";
+@import "buttons";
+@import "down-arrow";
+@import "wysiwyg";
+@import "line-x-animation";
+@import "pager-nav";
+@import "tables";
+@import "single-info";
+@import "social";
+@import "p2a-overrides";

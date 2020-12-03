@@ -1,0 +1,238 @@
+/* Helpful */
+.helpful {
+	border-top: 1px solid $light-gray;
+	margin: 2rem 0 0;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 2rem 0 0;
+}
+
+/* Helpful: Users has already voted */
+.helpful.helpful-exists {}
+
+/**
+ * Headline
+ */
+
+/* Headline: container */
+.helpful > .helpful-header {}
+
+/* Headline */
+.helpful > .helpful-header > h3 {
+	font-family: $font-sans-serif;
+	line-height: 1;
+	font-weight: normal;
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+
+	@media #{$phablet-up} {
+		margin: 0 .5rem .5rem 0;
+	}
+
+	@media #{$tablet-up} {
+		margin: 0 2rem 0 0;
+	}
+}
+
+/**
+ * Content
+ */
+
+/* Content: container */
+.helpful > .helpful-content {}
+
+/* Content: links */
+.helpful > .helpful-content > a {}
+.helpful > .helpful-content > a:hover {}
+
+/**
+ * Buttons & Controls
+ */
+
+/* Helpful: buttons container */
+.helpful .helpful-controls {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/* Helpful: single button container */
+.helpful .helpful-controls > div {}
+
+/* Helpful: buttons */
+.helpful > .helpful-controls > div > .helpful-button,
+.helpful > .helpful-content > .helpful-feedback-form .helpful-button {
+	text-transform: uppercase;
+    color: $white;
+    font-size: .75rem;
+    font-family: $font-sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: 85px;
+    padding: .6rem .9rem;
+	background: $dark-teal;
+	margin-right: .75rem;
+	border: none;
+}
+.helpful > .helpful-controls > div > .helpful-button:hover,
+.helpful > .helpful-content > .helpful-feedback-form .helpful-button:hover {
+	background: $dark-teal-hover;
+	cursor: pointer;
+}
+
+/* Helpful: pro button */
+.helpful > .helpful-controls > div > .helpful-button[data-value="pro"] {}
+
+/* Helpful: contra button */
+.helpful > .helpful-controls > div > .helpful-button[data-value="contra"] {}
+
+/* Helpful: counter */
+.helpful > .helpful-controls > div > .helpful-button > .helpful-counter {}
+
+/**
+ * Credits
+ */
+
+/* Credits: container */
+.helpful > .helpful-footer {}
+
+/* Credits: links */
+.helpful > .helpful-footer > a {}
+
+/**
+ * Feedback
+ */
+
+/* Feedback: form */
+.helpful > .helpful-content > .helpful-feedback-form {}
+
+/* Feedback: required star */
+.helpful > .helpful-content > .helpful-feedback-form req {}
+
+/* Feedback: paragraph */
+.helpful > .helpful-content > .helpful-feedback-form p {}
+.helpful > .helpful-content > .helpful-feedback-form > p,
+.helpful > .helpful-content > .helpful-feedback-form > .feedback-note > p,
+.helpful > .helpful-content > .helpful-feedback-form > .group {
+	font-family: $font-sans-serif;
+	line-height: 1;
+	font-weight: normal;
+	font-size: 1rem;
+	color: $dark-gray;
+}
+
+/* Feedback: inputs, textareas and buttons */
+.helpful > .helpful-content > .helpful-feedback-form label{
+	color: $gray;
+    font-size: .85rem;
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.helpful > .helpful-content > .helpful-feedback-form textarea,
+.helpful > .helpful-content > .helpful-feedback-form input[type="text"],
+.helpful > .helpful-content > .helpful-feedback-form input[type="email"],
+.helpful > .helpful-content > .helpful-feedback-form input[type="url"],
+.helpful > .helpful-content > .helpful-feedback-form input[type="number"] {
+	border: 1px solid $light-gray;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+    padding: 5px;
+    color: $gray;
+    font-size: 1rem;
+
+    @media #{$tablet-up} {
+    	width: 40vw;
+    	margin-bottom: 2rem;
+    }
+}
+.helpful > .helpful-content > .helpful-feedback-form textarea {
+	height: 75px;
+}
+.helpful > .helpful-content > .helpful-feedback-form input[type="checkbox"],
+.helpful > .helpful-content > .helpful-feedback-form input[type="radio"] {}
+
+.helpful > .helpful-content > .interrupter{
+	border: none;
+	padding: 0;
+	margin: 0;
+
+	p{
+		margin-right: 2rem;
+	}
+}
+
+.helpful .feedback-message{
+	display: none;
+}
+
+.helpful .control.feedback {
+	margin-bottom: 2rem;
+
+	[type="radio"]:checked,
+	[type="radio"]:not(:checked) {
+	    position: absolute;
+	    left: -9999px;
+	}
+	[type="radio"]:checked + label,
+	[type="radio"]:not(:checked) + label
+	{
+	    position: relative;
+	    padding-left: 28px;
+	    cursor: pointer;
+	    line-height: 20px;
+	    display: inline-block;
+	    color: #666;
+	}
+	[type="radio"]:checked + label:before,
+	[type="radio"]:not(:checked) + label:before {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 18px;
+	    height: 18px;
+	    border: 1px solid #ddd;
+	    border-radius: 100%;
+	    background: #fff;
+	}
+	[type="radio"]:checked + label:after,
+	[type="radio"]:not(:checked) + label:after {
+	    content: '';
+	    width: 12px;
+	    height: 12px;
+	    background: $dark-teal;
+	    position: absolute;
+	    top: 3px;
+	    left: 3px;
+	    border-radius: 100%;
+	    -webkit-transition: all 0.2s ease;
+	    transition: all 0.2s ease;
+	}
+	[type="radio"]:not(:checked) + label:after {
+	    opacity: 0;
+	    -webkit-transform: scale(0);
+	    transform: scale(0);
+	}
+	[type="radio"]:checked + label:after {
+	    opacity: 1;
+	    -webkit-transform: scale(1);
+	    transform: scale(1);
+	}
+
+	.feedback-option{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		    margin-bottom: .5rem;
+
+		label{
+			margin-bottom: 0;
+			margin-left: .2rem;
+		}
+	}
+}

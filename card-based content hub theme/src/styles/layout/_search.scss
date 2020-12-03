@@ -1,0 +1,107 @@
+.global-search {
+	background: rgba($white, .9);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    &.open {
+    	opacity: 1;
+    	visibility: visible;
+    	z-index: 100;
+    }
+    &-inner {
+    	width: 350px;
+    	position: relative;
+    	border-bottom: 1px solid $light-gray;
+		border-width: 2px;
+		@media #{$tablet-up} {
+			width: 650px;
+		}
+    }
+    &-close {
+    	background-image: url("data:image/svg+xml, #{$closeDarkTeal}");
+		background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: 30px;
+	    position: absolute;
+	    top: -95px;
+	    right: 0;
+	    height: 30px;
+	    width: 30px;
+	    cursor: pointer;
+	    @media #{$tablet-up} {
+	    	right: -50px;
+	    }
+    	&:hover {
+			background-image: url("data:image/svg+xml, #{$closeDarkTealHover}");
+		}
+    }
+}
+
+.global-search, .site-search {
+	.screen-reader-text {
+		display: none;
+	}
+	input[type="search"] {
+		background: none;
+	    outline: none;
+	    -webkit-appearance: none;
+	    border: 0;
+	    width: 300px;
+	    box-sizing: border-box;
+	    font-family: $font-sans-serif;
+	    font-size: 3.5em;
+	    padding: .1em .5em;
+	    font-weight: 400;
+	    color: $gray;
+	    @media #{$tablet-up} {
+			width: 600px;
+		}
+	}
+	input[type="submit"] {
+		background-image: url("data:image/svg+xml, #{$searchDarkTeal}");
+		background-repeat: no-repeat;
+	    background-position: center;
+	    background-color: transparent;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    text-indent: -999px;
+	    width: 50px;
+	    height: 50px;
+	    border: none;
+	    cursor: pointer;
+	    transition: all .3s ease;
+	    &:focus {
+	    	outline: none;
+	    }
+	    &:focus-within {
+	  		visibility: hidden;
+	  	}
+	    &:hover {
+			background-image: url("data:image/svg+xml, #{$searchDarkTealHover}");
+		}
+	}
+}
+
+.site-search {
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid $light-gray;
+	border-width: 2px;
+	margin-bottom: 5rem;
+	input[type="search"] {
+		width: 90%;
+	}
+}

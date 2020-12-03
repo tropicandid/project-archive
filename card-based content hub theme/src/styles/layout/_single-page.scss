@@ -1,0 +1,36 @@
+.single-content {
+	margin-bottom: 4rem;
+	@media #{$tablet-up} {
+		margin-bottom: 6rem;
+	}
+}
+
+.single-content-bottom {
+	position: relative;
+	.attachment-large {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin: .75rem 0 1.5rem;
+		@media #{$tablet-up} {
+			margin-top: 0;
+		}
+	}
+}
+
+.single-date {
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.article-featured {
+	width: 100%;
+	height: auto;
+}
+
+.single-content {
+	figure.wp-block-image {
+		float: left;
+	}
+}

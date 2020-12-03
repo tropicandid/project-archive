@@ -1,0 +1,77 @@
+.mobilization-pull-quote {
+    position: relative;
+    font-family: $font-sans-serif;
+    margin-right: 0;
+    margin-left: 0;
+
+    @media #{$tablet-up} {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    @media #{$laptop-up} {
+        margin: 4rem auto 4rem auto;
+        max-width: 915px;
+    }
+
+    &--standalone {
+        @media #{$laptop-up} {
+            margin-top: -4em;
+        }
+    }
+
+    p:first-child {
+        margin-bottom: 0;
+
+        @media #{$tablet-up} {
+            letter-spacing: -0.38px;
+            margin-bottom: 1rem;
+        }
+
+        &::before, &::after {
+            color: transparentize($dark-teal, 0.85);
+            font-family: $font-serif;
+            font-size: 3em;
+            position: absolute;
+        }
+
+        &::before {
+            content: "\201C";
+            line-height: 0.75em;
+            margin-left: -1.3rem;
+            position: absolute;
+
+            @media #{$tablet-up} {
+                margin-left: -3rem;
+            }
+        }
+
+        &::after {
+            content: "\201D";
+            line-height: 1.25em;
+            margin-left: 0.25rem;
+
+            @media #{$tablet-up} {
+                margin-left: 0.5rem;
+            }
+        }
+    }
+
+    & p {
+        color: $dark-teal;
+        font-size: 2.5em;
+        font-weight: 300;
+
+        @media #{$tablet-up} {
+            font-size: 3.8em;
+            line-height: 1.5em;
+            margin-bottom: 3rem;
+        }
+    }
+
+    cite {
+        color: $dark-gray;
+        display: block;
+        font-size: 0.45em;
+    }
+}

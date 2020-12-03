@@ -1,0 +1,17 @@
+.pagesections {
+	.wp-post-image {
+		margin-bottom: 2rem;
+		@media #{$tablet-up} {
+			margin-bottom: 4rem;
+		}
+	}
+	&-section {
+		border-top: 1px solid $light-gray;
+		margin-top: 2rem;
+		padding-top: 2rem;
+		@media #{$tablet-up} {
+			margin-top: 3rem;
+			padding-top: 3rem;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.pagesections, 
+.mobilization-section {
+	.advocacy-actionwidget {
+	    -webkit-box-shadow: none !important;
+	    box-shadow: none !important;
+		border: none !important;
+		border-radius: 0 !important;
+
+		iframe {
+		    min-height: 680px !important;
+		    width: calc(100% + 2rem);
+	    	margin-left: -1rem;
+
+		    input, 
+		    span, 
+		    label {
+		    	font-family: $font-sans-serif;
+		    }
+		}
+	}
+
+	.p2a-widget.p2a-action-form,
+	form {
+		padding: 0 !important;
+
+		@media #{$tablet-up} {
+			padding: 0 !important;
+		}
+	}
+
+	button.p2a-button-icon-arrow,
+	button.p2a-button-icon-arrow span,
+	.p2a-button-icon-arrow,
+	.p2a-button-icon-arrow span {
+		width: 185px!important;
+
+		@media #{$up-to-tablet} {
+			width: 185px!important;
+		}
+	}
+
+	button.p2a-button-icon-arrow span {
+		width: 185px!important;
+		display: block;
+	}
+
+	.p2a-action-form .p2a-fieldset-submit button {
+		width: 180px !important;
+	}
+}
+
+.mobilization-promo--form {
+	.advocacy-actionwidget {
+		iframe {
+		    min-height: 400px !important;
+		}
+	}
+}

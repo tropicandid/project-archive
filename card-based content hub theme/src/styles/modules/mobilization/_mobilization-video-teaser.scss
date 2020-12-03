@@ -1,0 +1,76 @@
+.mobilization-video-teaser {
+    background-color: $darker-gray;
+    padding: 2rem 0;
+
+    @media #{$tablet-up} {
+        padding: 5rem 0;
+    }
+
+    @media #{$laptop-up} {
+        padding: 7rem 0;
+    }
+
+    &, & p {
+        color: $white;
+    }
+
+    &__container {
+        @media #{$tablet-up} {
+            align-items: center;
+            display: flex;
+            padding: 0 3rem;
+        }
+    }
+
+    &__image {
+        background-position: 50%;
+        background-size: cover;
+        height: 40vw;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        @media #{$tablet-up} {
+            align-self: stretch;
+            flex-basis: 55%;
+            height: auto;
+            margin-bottom: 0;
+        }
+    }
+
+    &__copy {
+        @media #{$tablet-up} {
+            margin-left: 3.4rem;
+            max-width: 350px;
+         }
+
+         @media #{$laptop-up} {
+            max-width: 490px;
+         }
+    }
+
+    &__title {
+        font-weight: 300;
+
+        @media #{$tablet-up} {
+            font-size: 3.6em;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+                
+        img {
+            transform: translateY(3px);
+            margin-right: 0.5rem;
+        }
+
+        @media #{$tablet-up} {
+            margin-bottom: 1.75rem;
+        }
+    }
+
+    &__description {
+        margin-bottom: 0;
+    }
+}

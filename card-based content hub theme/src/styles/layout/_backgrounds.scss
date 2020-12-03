@@ -1,0 +1,13 @@
+.background-white {
+	background: $white;
+	padding: 2rem;
+	@media #{$tablet-up} {
+		padding: 3rem;
+	}
+	@media #{$tablet-landscape-up} {
+		padding: 55px 75px;
+	}
+	&.border {
+		border: 1px solid $light-gray;
+	}
+}

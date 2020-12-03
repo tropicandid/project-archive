@@ -1,0 +1,25 @@
+.related-articles {
+	border-top: 1px solid $light-gray;
+	padding-top: 3rem;
+	@media #{$tablet-up} {
+		padding-top: 5rem;
+	}
+	&-text {
+		max-width: 630px;
+		margin-bottom: 2.5rem;
+		.related-articles-title {
+			font-size: 2em;
+			font-family: $font-sans-serif;
+		    line-height: 1.4em;
+			margin-bottom: .5rem;
+			color: $dark-gray;
+			@media #{$tablet-up} {
+		    	font-size: 3.3em;
+		    	margin-bottom: .25rem;
+		    }
+		}
+	}
+	p.card-description {
+		display: none;
+	}
+}

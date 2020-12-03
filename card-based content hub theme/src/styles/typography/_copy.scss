@@ -1,0 +1,37 @@
+p,
+.single-content ol,
+.single-content ul {
+	font-size: 1.5em;
+    margin: 0 0 1.5rem;
+    line-height: 1.6em;
+    color: $gray;
+    @media #{$tablet-up} {
+    	font-size: 1.8em;
+    	line-height: 1.7em;
+    }
+    a {
+    	color: $dark-teal;
+    	&:hover {
+    		color: $dark-teal-hover;
+    	}
+    }
+    &.dark-gray {
+        color: $dark-gray;
+    }
+    &.upper-sans-bold {
+        font-size: 1.1em;
+        font-family: $font-sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .09em;
+        @media #{$tablet-up} {
+            font-size: 1.4em;
+        }
+    }
+    &.no-marg {
+        margin-bottom: 0;
+    }
+    cite {
+        font-style: normal;
+    }
+}

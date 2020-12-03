@@ -1,0 +1,46 @@
+.single-info,
+.single-info a {
+	font-family: $font-sans-serif;
+	padding: 0 0 .75rem;
+	text-transform: uppercase;
+    font-size: 1.05em;
+    letter-spacing: .05em;
+    color: $dark-gray;
+	text-decoration: none;
+	
+	span {
+		color: $brown;
+		font-weight: 600;
+	}
+
+	&--large {
+		font-size: 1.4em;
+		font-weight: 500;
+	}
+}
+
+.single-info a {
+	&:hover {
+    	color: $dark-teal-hover;
+    	text-decoration: underline;
+	}
+}
+
+.single-info--teal {
+	a {
+		color: $medium-teal;
+
+		&:hover {
+			color: darken($medium-teal, 10%);		
+		}
+	}
+}
+
+@media #{$tablet-up} {
+	.single-content {
+		.single-info {
+			font-size: 1.4em;
+			margin-bottom: .5rem;
+		}
+	}
+}

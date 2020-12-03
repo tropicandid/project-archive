@@ -1,0 +1,83 @@
+.mobilization-embedded-video {
+    cursor: pointer;
+
+    &, & p {
+        color: $white;
+
+    }
+    
+    &__play-button {
+        background-color: $medium-teal;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 2.5rem;
+        transform: translateX(-50%) translateY(-50%);
+        width: 40px;
+
+        img {
+            transform: translateX(2px);
+            width: 12x;
+        }
+
+        @media #{$tablet-up} {
+            height: 70px;
+            top: 4rem;
+            width: 70px;
+
+            img {
+                transform: translateX(3px);
+                width: 20px;
+            }
+        }
+
+        @media #{$laptop-up} {
+            left: 50%;
+            height: 114px;
+            top: 50%;
+            width: 114px;
+
+            img {
+                transform: translateX(4px);
+                width: 25px;
+            }
+        }
+    }
+
+    &__container {
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(82,81,81,0) 100%);
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+
+        @media #{$tablet-up} {
+            padding: 2rem;
+        }
+
+        @media #{$laptop-up} {
+            padding: 2.5rem;
+        }
+
+    }
+
+    &__title {
+        max-width: 750px;
+        text-shadow: 0 0 12px transparentize($black, 0.2);
+    }
+
+    &__description {
+        margin-bottom: 0;
+        max-width: 900px;
+        text-shadow: 0 0 12px transparentize($black, 0.4);
+    }
+
+    .video-full-overlay, .video-full-wrap {
+        background: none;
+    }
+}

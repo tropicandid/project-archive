@@ -1,0 +1,65 @@
+.interrupter{
+	border: 1px solid $dark-teal;
+	padding: 1rem;
+    margin: 1rem 0 1.5rem;
+
+    @media #{$phablet-up} {
+    	display:flex;
+    	align-items: center;
+    	justify-content: space-between;
+    }
+
+
+    @media #{$tablet-up} {
+    	padding: 2rem 2rem 1.75rem 1.75rem;
+    	margin: 2rem 0 2.5rem;
+    }
+
+    @media #{$laptop-up} {
+    	padding: 2rem 3rem 1.75rem 2rem;
+    }
+
+	p{
+		font-family: $font-sans-serif;
+		color: $dark-teal;
+    	line-height: 1.5;
+    	font-size: 1rem;
+    	margin: 0 0 .5rem 0;
+
+    	@media #{$phablet-up} {
+			font-size: 2.25vw;
+			margin:0;
+		}
+
+    	@media #{$tablet-up} {
+    		font-size: 1.3rem;
+    	}
+
+    	@media #{$laptop-up} {
+    		font-size: 1.45rem;
+    	}
+	}
+
+	.button{
+		
+		font-size: .75rem;
+		width: 105px;
+		padding: 0.9rem;
+		margin:0;
+
+		@media #{$phablet-up} {
+			font-size: .75rem;
+			width: 105px;
+			padding: 0.9rem;
+		}
+
+		@media #{$tablet-up} {
+			width: 140px;
+			font-size: 1.6em;
+		}
+
+		@media #{$laptop-up} {
+			width: 160px;
+		}
+	}
+}

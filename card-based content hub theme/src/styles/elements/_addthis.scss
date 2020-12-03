@@ -1,0 +1,32 @@
+.addthis-side-wrapper {
+    margin: 1.5rem 0 .5rem;
+	@media #{$tablet-landscape-up} {
+		margin: 0;
+		position: absolute;
+		top: 0;
+	    left: -119px;
+	    width: 43px;
+	}
+	&.sticky {
+		@media #{$tablet-landscape-up} {
+			position: fixed;
+			top: 162px;
+			left: calc(7.25% - 43px);
+		}
+		@media (min-width: 1290px) {
+			left: calc((100% - 1100px) / 2 - 43px);
+		}
+	}
+	&.stickyUnStick {
+		@media #{$tablet-landscape-up} {
+			top: auto;
+			bottom: 0;
+		}
+	}
+	&.alt {
+		@media #{$up-to-tablet-landscape} {
+			text-align: center;
+    		margin: 2em 0 3rem;
+		}
+	}
+}
