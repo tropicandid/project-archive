@@ -1,0 +1,29 @@
+.container {
+	width: 90%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.page-section {
+	min-height: 100vh;
+	position: relative;
+	padding: 8rem 0 5rem;
+	@media #{$tablet-up} {
+		padding: 12rem 0 8rem;
+	}
+	&.alt {
+		min-height: auto;
+	}
+	&.alt-pad {
+		padding: 8rem 0 0;
+		@media #{$tablet-up} {
+			padding: 12rem 0 8rem;
+		}
+	}
+	&.alt-pad2 {
+		padding: 8rem 0 5rem;
+		@media #{$tablet-up} {
+			padding: 12rem 0 0;
+		}
+	}
+}

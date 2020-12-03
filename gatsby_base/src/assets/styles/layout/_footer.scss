@@ -1,0 +1,30 @@
+.footer-main {
+	background: $black;
+	position: relative;
+	z-index: 10;
+    padding: 3rem 0;
+    &-inner {
+    	display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: space-between;
+    	@media #{$tablet-landscape-up} {
+    		height: 80px;
+    	}
+    }
+    &-logo {
+    	width: 75px;
+    	height: auto;
+        display: block;
+    	@media #{$tablet-landscape-up} {
+    		width: 100px;
+    	}
+    }
+    &-copyright {
+        font-size: 1rem;
+        color: $white;
+        text-align: left;
+        padding-right: 4rem;
+    }
+}

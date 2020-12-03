@@ -1,0 +1,23 @@
+@import "buttons";
+@import "iframe";
+@import "overlay";
+
+a,
+:link,
+:visited {
+	color: salmon;
+	text-decoration: none;
+}
+
+a {
+	transition: .25s all ease-in-out;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

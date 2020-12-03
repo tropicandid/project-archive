@@ -1,0 +1,19 @@
+.play-btn {
+	background: url('../../../public/images/icon-play.svg') no-repeat center;
+    background-size: 50px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transition: all .3s ease;
+    cursor: pointer;
+    @media #{$tablet-up} {
+        background-size: 80px;
+    }
+    &:active, &:focus, &:active:focus {
+        outline: none;
+        border: none;
+    }
+    &:hover {
+        opacity: .8;
+    }
+}

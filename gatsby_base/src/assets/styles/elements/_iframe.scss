@@ -1,0 +1,51 @@
+.responsive-iframe {
+    width: 900px;
+    padding: 4rem 5%;
+    position: relative;
+
+    @media #{$landscape} {
+        padding: 2rem 12%;
+    }
+
+    @media #{$tablet-up} {
+        padding: 4rem 5%;
+    }
+
+    &-close {
+        width: 50px;
+        height: 50px;
+        background: url('../../../public/images/icon-close.svg') no-repeat center;
+        background-size: 35px;
+        position: absolute;
+        top: -20px;
+        right: 2.5%;
+        cursor: pointer;
+        transition: all .5s ease;
+        @media #{$tablet-landscape-up} {
+            background-size: 40px;
+            right: -20px;
+        }
+        &:active, &:focus, &:active:focus {
+            outline: none;
+            border: none;
+        }
+        &:hover {
+            opacity: .8;
+        }
+    }
+    &-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    &-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

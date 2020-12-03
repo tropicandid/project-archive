@@ -1,0 +1,161 @@
+.vision {
+    background: url('../../../public/images/vision-bkgd.png');
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    &-header {
+        max-width: 750px;
+        margin: 0 auto 3rem;
+    }
+    &-boxes {
+        margin-top: 3rem;
+        @media #{$tablet-landscape-up} {
+            display: flex;
+            margin: 19rem auto 0rem;
+        }
+        &-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 2.8rem;
+            margin-bottom: 1rem;
+            padding-right: 7rem;
+            text-transform: uppercase;
+            @media #{$tablet-landscape-up} {
+                font-size: 1.8rem;
+                margin-bottom: .5rem;
+            }
+        }
+        &-description {
+            font-size: 2.2rem;
+            font-weight: 900;
+            line-height: 2.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: -1;
+            @media #{$tablet-landscape-up} {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .featured-text {
+            .bold {
+                font-weight: bold;
+            }
+
+            .second {
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+        &-image {
+            position: absolute;
+            z-index: -1;
+            max-width: none;
+            display: none;
+            @media #{$tablet-landscape-up} {
+                display: block;
+            }
+        }
+        &-play {
+            top: 0;
+            right: 0;
+            z-index: 2;
+            @media #{$tablet-up} {
+                top: 2rem;
+                right: 2rem;
+            }
+        }
+        .image0 {
+            left: 30%;
+            @media #{$tablet-landscape-up} {
+                left: 50%;
+            }
+            @media #{$laptop-up} {
+                left: 80%;
+            }
+        }
+        .image1 {
+            right: -12rem;
+        }
+        .image2 {
+            top: -17rem;
+            right: 0;
+        }
+        .image3 {
+            bottom: 81%;
+            right: 20%;
+        }
+        &-box {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+        &-box-inner {
+            background: $yellow;
+            padding: 3rem 3rem 1rem;
+            position: relative;
+            z-index: 1;
+            @media #{$tablet-up} {
+                padding: 4rem 5rem 1rem;
+            }
+
+            img {
+                max-width: 100%;    
+                box-shadow: 7px 7px 0px black;
+                margin-bottom: 1.5rem;
+                position: relative;
+                z-index: -1;
+            }
+
+            .play-btn {
+                bottom: 2rem;
+                top: unset;
+                position: relative;
+                margin-bottom: -4rem;
+                margin-top: -4rem;
+                z-index: 100;
+                margin-left: calc(100% - 65px);
+
+                @media #{$tablet-up} {
+                    margin-left: calc(100% - 45px);
+                    height: 100px;
+                    width: 100px;
+                    background-size: 80px;
+                    margin-bottom: -2.5rem;
+                    margin-top: -6.5rem;
+                }
+            }
+        }
+        &-left {
+            @media #{$tablet-landscape-up} {
+                padding-right: 5rem;
+            }
+        }
+        &-right {
+            @media #{$tablet-landscape-up} {
+                padding: 13rem 0 0 5rem;
+                .vision-boxes-box:first-child {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+    }
+
+    .desktop-box {
+        display: none;
+
+        @media #{$tablet-landscape-up} {
+            display: block
+        }
+    }
+
+    .mobile-box {
+        display: block;
+
+        @media #{$tablet-landscape-up} {
+            display: none
+        }
+    }
+}

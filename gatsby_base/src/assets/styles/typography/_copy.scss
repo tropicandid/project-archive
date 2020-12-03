@@ -1,0 +1,50 @@
+p {
+	font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0 0 2rem;
+    font-weight: 300;
+	@media #{$tablet-up} {
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+	&.white {
+		color: $white;
+	}
+	&.center {
+		text-align: center;
+	}
+}
+
+a {
+	cursor: pointer;
+}
+
+span {
+	&.white {
+		color: $white;
+	}
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+.tab-header {
+	font-size: 2.6rem;
+	line-height: 2.6rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	
+	@media #{$phablet-up} {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+
+	@media #{$tablet-up} {
+		font-size: 3.8rem;
+		line-height: 3.8rem;
+	}
+}

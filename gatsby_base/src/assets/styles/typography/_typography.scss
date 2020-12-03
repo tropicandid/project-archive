@@ -1,0 +1,22 @@
+/** Set Base Font Sizes */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-weight: 300;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $black;
+	font-family: $font-sans-serif;
+}
+
+@import "copy";
+@import "headings";

@@ -1,0 +1,26 @@
+.overlay {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+	background: rgba($black, .85);
+	display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+    opacity: 0;
+    &.fixed {
+    	position: fixed;
+    	&.open {
+    		z-index: 100;
+    	}
+    }
+	&.open {
+		z-index: 10;
+		opacity: 1;
+	}
+}

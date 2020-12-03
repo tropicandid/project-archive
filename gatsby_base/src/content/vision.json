@@ -1,0 +1,50 @@
+{
+    "header": "<span>One vision</span>Four ways forward",
+    "subheader": "Listen in as we discuss critical issues in American health care today.",
+    "content": [
+    	{
+      	"videoSrc": "https://player.vimeo.com/video/463539971",
+      	"videoTitle": "Mission Section Video 1",
+        "title": "Learning",
+        "description": "The Importance of Diversity",
+        "featureText": "<span class=\"bold\">Featuring </span>Marc Henry Estriplet, </br>MD-MPH Student, Rutgers Medical School<span class=\"second\">Christle Nwora, MD, </br>Resident at Johns Hopkins Medicine</span>",
+        "image": "/images/Educa.png",
+        "imageAlt": "Doctors talking",
+        "imagePositionStart": "-75px",
+        "imagePositionEnd": "-150px"
+    	},
+    	{
+      	"videoSrc": "https://player.vimeo.com/video/462764632",
+      	"videoTitle": "Mission Section Video 2",
+        "title": "Health Care",
+        "description": "A Conversation About Improving Access",
+        "featureText": "<span class=\"bold\">Featuring </span>Daniel Hashimoto, MD, </br>Massachusetts General Hospital",
+        "image": "/images/PatientCare.png",
+        "imageAlt": "Mother and daughter",
+        "imagePositionStart": "-75px",
+        "imagePositionEnd": "-200px"
+    	},
+    	{
+      	"videoSrc": "https://player.vimeo.com/video/463539889",
+      	"videoTitle": "Mission Section Video 3",
+        "title": "Discovery",
+        "description": "Strengthening the Research Workforce",
+        "featureText": "<span class=\"bold\">Featuring </span>Tika Benveniste, PhD,</br>University of Alabama School of Medicine",
+        "image": "/images/Research.png",
+        "imageAlt": "Medical researcher",
+        "imagePositionStart": "-75px",
+        "imagePositionEnd": "-250px"
+    	},
+    	{
+      	"videoSrc": "https://player.vimeo.com/video/462712929",
+      	"videoTitle": "Mission Section Video 4",
+        "title": "Community Collaborations",
+        "description": "Working Together on Solutions",
+        "featureText": "<span class=\"bold\">Featuring </span>Consuelo Wilkins, MD,</br>Vanderbilt University",
+        "image": "/images/Collab.png",
+        "imageAlt": "People on crosswalk",
+        "imagePositionStart": "-75px",
+        "imagePositionEnd": "-250px"
+    	}
+  	]
+}

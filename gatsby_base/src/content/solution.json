@@ -1,0 +1,67 @@
+{
+    "title": "<span>The ten-point plan</span>to make it happen",
+    "description": "Systemic change takes systematic action. That’s why, with the help of our members and a community of experts, we developed the following plan to turn our vision for a healthier future into a reality.",
+    "content": [
+    	{
+      		"accordionTitle": "Strengthen Medical Education",
+      		"accordionSubTitle": "Strengthen the Medical Education Continuum for Transformed Health Care and Learning Environments",
+		      "accordionCopy": "<p>The COVID-19 pandemic has disrupted and forced change in medical education and health care. During a time of tremendous upheaval, the strength and resilience of medical educators and learners shone through. The AAMC will continue to foster innovation in medical education and support efforts to promote positive clinical learning environments. Individual and community health outcomes must be front and center in medical education.</p><p>This action plan will seek to better align educational outcomes across medical schools and their clinical partners, and across the entire continuum of medical education (undergraduate, graduate, and continuing medical education), to improve patient-level and system-level outcomes. The result will be a cadre of current and future physicians engaged in a lifetime of learning for the benefit of patients and their families and communities.</p>",
+          "accordionImage": "/images/accordion-images/tab-1.png"
+      },
+    	{
+      		"accordionTitle": "Support Students",
+          "accordionSubTitle": "Extend the AAMC’s Leadership Role in Helping Students Progress Through Their Medical Professional Journey",
+          "accordionCopy":  "<p>Medical students and residents have demonstrated commitment, energy, and adaptability during the COVID-19 crisis. As they progress through their medical education journey, learners encounter complicated, ambiguous, and costly processes. Learners need an integrated system of knowledge, guidance, direction, and support to enable them to explore and make confident choices in their journeys, which will ease their anxiety and help them focus on serving patients and communities.</p><p>The need for solutions in the transition to residency is especially acute. The system by which prospective residents secure positions to enter graduate medical education (GME) in the United States does not work well. As the United States Medical Licensing Examination® Step 1 moves to a pass-fail scale, program directors will need to differentiate among a high volume of applicants but will have fewer measures by which to compare students.</p><p>As a leader in the research and development of assessments designed to measure a broad range of competencies along the medical education continuum, the AAMC will lead a coalition of collaborators to implement effective solutions to ensure the GME trainee selection process is fair, equitable, and feasible.</p>",
+          "accordionImage": "/images/accordion-images/tab-2.png"
+    	},
+    	{
+      		"accordionTitle": "Focus on Inclusivity",
+            "accordionSubTitle": "Equip Medical Schools and Teaching Hospitals and Health Systems to Become More Inclusive, Equitable Organizations",
+            "accordionCopy":  "<p>During the COVID-19 pandemic, front-line health care providers, patients, families, and the public have displayed countless acts of unity. We have been “in this together.” And yet, in other ways, we have not been. The pandemic struck Black and Native American communities and other marginalized and vulnerable groups especially hard. Then the brutal deaths of George Floyd and other Black Americans threw the country into turmoil as nationwide protests erupted, laying bare many inequities and reigniting the struggle for racial equality.</p><p>For years, women and members of marginalized groups in academic medicine have faced systemic problems such as racism, microaggressions, bias, harassment, disrespect, inadequate mentoring, salary inequities, and isolation, which have harmed their sense of belonging.</p><p>To accelerate discovery and improve health, academic medicine needs to create equitable and inclusive environments in which all faculty, staff, administrators, trainees, and learners feel welcome, safe, valued, and a sense of belonging and can pursue successful science and medicine careers. Such environments are key to attracting and advancing a diverse workforce and improving the health of all people.</p>",
+          "accordionImage": "/images/accordion-images/tab-3.png"
+          
+    	},
+      {
+          "accordionTitle": "Diversify Tomorrow’s Doctors",
+            "accordionSubTitle": "Increase Significantly the Number of Diverse Medical School Applicants and Matriculants",
+            "accordionCopy":  "<p>Despite much talk and action, the academic medicine community has made minimal progress in increasing the number of physicians from diverse racial and ethnic backgrounds. We need more assertive efforts to cultivate a more diverse and culturally prepared workforce. We need to better understand how systemic barriers such as racism and inconsistent access to quality education, beginning with pre-K, negatively affect diversity in academic medicine. And we must design bolder interventions to address the growing absence of Black men and the invisibility of American Indians and Alaska Natives in medical school and the physician workforce, which are national crises.</p><p>In this action plan, the AAMC will take a multitiered approach that will require sustained investment, collaboration, and attention over time to significantly increase the diversity of medical students.</p>",
+          "accordionImage": "/images/accordion-images/tab-4.png"
+      },
+      {
+          "accordionTitle": "Prioritize Research",
+            "accordionSubTitle": "Strengthen the Nation’s Commitment to Medical Research and the Research Community",
+            "accordionCopy":  "<p>The COVID-19 pandemic has reminded the world that research innovation and discoveries save lives. Biomedical research allows us to understand the mechanisms underlying health and disease, from the molecular level to population and community factors. For decades, the academic medicine community has delivered the promise of medical advances for the betterment of humankind.</p><p>But we need to do more. To improve health and quality of life and eradicate disease, we must continually advance medical research and develop new and more effective treatments. Yet many analyses predict that the future of basic science is at risk. We need to better support diverse learners who will become the next generation of scientists, physician-scientists, and other professionals in the biomedical research enterprise. We must work with the academic medicine community, government agencies, and other organizations to foster an optimal environment for discovery. This action plan will work to sustain America’s commitment to biomedical research and support and diversify its workforce to advance health.</p>",
+          "accordionImage": "/images/accordion-images/tab-6.png"
+      },
+      {
+          "accordionTitle": "Evolve Leadership Skills",
+            "accordionSubTitle": "Enhance the Skills and Capacity of People in Academic Medicine",
+           "accordionCopy":  "<p>As the response to the COVID-19 pandemic showed, the strength of America’s health care system depends on its people: the institutional and health care system leaders whose decisions protected the public, patients, and employees; the faculty and staff who met the evolving needs of learners with dedication and resolve; the front-line health care professionals and researchers whose leadership, courage, skill, and dedication saved countless lives; and student and resident leaders who stepped up, ready to serve, with creativity and impact.</p><p>Through this action plan, the AAMC will build on this leadership talent to ensure academic medicine will continue to be “leader-ready” for any challenge by focusing on:</p><ul><li>Creating and delivering learning experiences that dive deeply into the knowledge and skills that the people of academic medicine need to lead and effect change in complex systems.</li><li>Taking an integrated, innovative, and unified approach to leadership development.</li><li>Making leadership training more widely accessible, including to professional staff and faculty.</li></ul>", 
+          "accordionImage": "/images/accordion-images/tab-5.png"
+      },
+      {
+          "accordionTitle": "Improve Access",
+            "accordionSubTitle": "Improve Access to Health Care for All",
+           "accordionCopy":  "<p>The COVID-19 pandemic has highlighted the leadership role the nation’s academic medicine community plays in clinical care, innovation, and crisis response. It also underscored the many fissures in the nation’s system of care, including health care access. The academic medicine community can lead the nation in identifying, implementing, and advocating for solutions to improve access to health care for all through its mission areas, commitment to evidence-based care, and community collaborations.</p><p>This action plan will focus attention and effort on improving access to care for people in medically underserved and otherwise marginalized communities. We will seek to identify and advance innovative, effective, and evidence-based strategies that enhance health care access for patients and promote health care equity while supporting high-value care.</p>",
+          "accordionImage": "/images/accordion-images/tab-7.png"
+      },
+      {
+          "accordionTitle": "Advance Knowledge",
+            "accordionSubTitle": "Advance Knowledge Through the AAMC Research and Action Institute",
+           "accordionCopy":  "<p>The academic medicine community, policymakers, and others turn to the AAMC for information, data, and advice on countless issues. This is especially true in times of national and international crises. AAMC research and analyses inform policy and practice across the missions and institutions of academic medicine.</p><p>The AAMC will elevate our leadership role in research and policy analysis through the creation of the AAMC Research and Action Institute. The institute will coalesce an interdisciplinary team of AAMC researchers, analysts, national experts, and fellows to study and understand the most critical issues affecting the missions and institutions of academic medicine and harness those institutions to test, validate, promote, and scale effective change.</p>",
+          "accordionImage": "/images/accordion-images/tab-8.png"
+      },
+      {
+          "accordionTitle": "Promote Health Equity and Health Justice",
+            "accordionSubTitle": "Launch the AAMC as a National Leader in Health Equity and Health Justice",
+           "accordionCopy":  "<p>The COVID-19 pandemic has laid bare existing health inequities, taking a disproportionate toll on marginalized communities throughout the world. It has also mobilized renewed calls to focus further “upstream” to improve health. Emerging from this crisis, the AAMC has an opportunity and an obligation to unify our approach and thought leadership and develop evidence to support health and social justice.</p><p>Building on the AAMC’s expertise in this area, this action plan will establish the AAMC Center for Health Justice to focus on the intersection of population health, community health, and health equity. The new center will become a source of national expertise for the academic medicine community and the public and will work on initiatives in clinical, education, research, and community engagement that advance the moral, financial, and societal imperative of health justice.</p>",
+          "accordionImage": "/images/accordion-images/tab-9.png"
+      },
+      {
+          "accordionTitle": "Adapt to Change",
+            "accordionSubTitle": "Adapt the AAMC to the Changing Needs of Academic Medicine",
+           "accordionCopy":  "<p>Rapid systemic change is occurring throughout academic medicine and health care. And the AAMC will change with it.</p><p>The evolving operations and structure of systems in academic medicine pose opportunities for the AAMC to reexamine our current membership model and the ways we convene individuals from medical schools, teaching hospitals and health systems, and academic societies. When the people of academic medicine convene, they share challenges, expertise, inspiration, and support with one another that drives resilience and professional development, builds institutional capacity, and strengthens our collective voice.</p><p>As part of this action plan, the AAMC will take a fresh look at our membership model and structures for engaging with our community to determine how the AAMC can broaden and deepen our involvement with people in, and even beyond, academic medicine to achieve our mission.</p>",
+          "accordionImage": "/images/accordion-images/tab-10.png"
+      }
+  	]
+}
